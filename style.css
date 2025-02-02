@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(110, 29, 29);
+}
+
+.parent {
+  position: relative;
+  height: 1500px;
+}
+
+.child {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+
+.one {
+  background-color: orange;
+  top: 130px;
+  left: 70px;
+  position: fixed;
+}
+
+.two {
+  background-color: red;
+  top: 630px;
+  left: 500px;
+}
+
+.three {
+  background-color: violet;
+  top: 640px;
+  left: 600px;
+  position: sticky;
+}
+
+.four {
+  background-color: greenyellow;
+  top: 660px;
+  left: 550px;
+}
+
+.five {
+  background-color: gray;
+  top: 630px;
+  left: 700px;
+}
