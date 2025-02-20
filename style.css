@@ -1,46 +1,23 @@
-body {
-  background-color: rgb(110, 29, 29);
-}
-
 .parent {
-  position: relative;
-  height: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "sidebar navbar"
+    "main main";
 }
 
-.child {
-  width: 70px;
-  height: 70px;
-  position: absolute;
+.navbar {
+  grid-area: navbar;
+  background-color: lightcoral;
 }
 
-.one {
-  background-color: orange;
-  top: 130px;
-  left: 70px;
-  position: fixed;
+.sidebar {
+  grid-area: sidebar;
+  background-color: lightgreen;
 }
 
-.two {
-  background-color: red;
-  top: 630px;
-  left: 500px;
-}
-
-.three {
-  background-color: violet;
-  top: 640px;
-  left: 600px;
-  position: sticky;
-}
-
-.four {
-  background-color: greenyellow;
-  top: 660px;
-  left: 550px;
-}
-
-.five {
-  background-color: gray;
-  top: 630px;
-  left: 700px;
+.main {
+  grid-area: main;
+  background-color: lightblue;
 }
